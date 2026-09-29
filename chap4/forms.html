@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* This CSS styling was generated with the help of AI */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 500px;
+            padding: 30px 35px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: 600;
+            color: #34495e;
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        input[type="url"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            margin-top: 4px;
+            transition: border-color 0.2s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="tel"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        input[type="number"]:focus,
+        input[type="date"]:focus,
+        input[type="url"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #4a90e2;
+            box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 90px;
+            font-family: inherit;
+        }
+
+        p {
+            font-weight: 600;
+            color: #34495e;
+            margin-bottom: 6px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 6px;
+            accent-color: #4a90e2;
+        }
+
+        input[type="radio"]+label,
+        input[type="checkbox"]+label {
+            font-weight: normal;
+            margin-right: 18px;
+            color: #333;
+        }
+
+        button {
+            padding: 10px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        button[type="submit"] {
+            background-color: #4a90e2;
+            color: #ffffff;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #357abd;
+        }
+
+        button[type="reset"] {
+            background-color: #e0e0e0;
+            color: #333;
+        }
+
+        button[type="reset"]:hover {
+            background-color: #cacaca;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>STUDENT REGISTRATION</h1>
+    <form>
+        <label for="fname">Full Name:</label>
+        <input type="text" id="fname" name="username" required><br><br>
+
+        <label for="num">Phone Number:</label>
+        <input type="tel" id="num" name="number" required><br><br>
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email" required><br><br>
+
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="password" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label for="dob">Date of birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <p>Gender:</p>
+        <input id="M" type="radio" name="gender" value="male">
+        <label for="M">Male</label>
+        <input id="F" type="radio" name="gender" value="female">
+        <label for="F">Female</label>
+        <input id="Other" type="radio" name="gender" value="other">
+        <label for="Other">Other</label>
+
+        <br><br>
+
+        <p>Skills:</p>
+        <input type="checkbox" name="skill_1" value="HTML" id="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" name="skill_2" value="CSS" id="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" name="skill_3" value="JavaScript" id="javascript">
+        <label for="javascript">JavaScript</label>
+
+        <br><br>
+
+        <p>Branch:</p>
+        <select id="branch" name="branch">
+            <option value="" disabled selected>CSE[ ]</option>
+            <option value="AIML">AIML</option>
+            <option value="AIDS">AIDS</option>
+            <option value="cyber security">Cyber Security</option>
+        </select>
+
+        <br><br>
+
+        <label for="about">About Yourself:</label><br>
+        <textarea id="about" name="about"></textarea>
+        <br><br>
+
+        <label for="link">Website:</label>
+        <input type="url" id="link" name="url"><br><br>
+
+        <button type="submit">Submit</button>
+        <br><br>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+
+</html>
