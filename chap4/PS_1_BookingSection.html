@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatewaytrip Booking</title>
+</head>
+
+<body>
+    <h2>Personal Details:</h2>
+    <form>
+        <label for="fname">Full Name:</label>
+        <input id="fname" type="text" name="username" required>
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <input id="email" type="email" name="email_id" required>
+        <br><br>
+
+        <label for="ph_no">Phone Number</label>
+        <input id="ph_no" type="tel" name="phonenumber" required>
+        <br>
+        <br>
+
+        <h2>Travel Details:</h2>
+        <p>Choose Destination:</p>
+        <select id="destination" name="Destination" required>
+            <option value="" disabled selected>Destination</option>
+            <option value="Goa">Goa</option>
+            <option value="Manali">Manali</option>
+            <option value="Dubai">Dubai</option>
+            <option value="Maldives">Maldives</option>
+            <option value="Paris">Paris</option>
+        </select>
+        <br><br>
+
+        <label for="date">Travel Date:</label>
+        <input id="date" name="TravelDate" type="date" required>
+        <br><br>
+
+        <label for="no_travelers">Number of Travelers</label>
+        <input id="no_travelers" type="number" name="Number_OF_Travelers" required>
+        <br><br>
+
+        <p>Travel Type:</p>
+        <input id="S_travel" type="radio" name="TypeTravel" value="solo">
+        <label for="S_travel">Solo</label>
+        <input id="C_travel" type="radio" name="TypeTravel" value="couple">
+        <label for="C_travel">Couple</label>
+        <input id="F_travel" type="radio" name="TypeTravel" value="family">
+        <label for="F_travel">Family</label>
+        <input id="Friends_travel" type="radio" name="TypeTravel" value="friends">
+        <label for="Friends_travel">Friends</label>
+        <br><br>
+
+        <p>Preferred Activities:</p>
+        <input type="checkbox" value="beach" id="B_activity" name="activity1">
+        <label for="B_activity">Beach</label>
+        <input type="checkbox" value="adventure" id="A_activity" name="activity2">
+        <label for="A_activity">Adventure</label>
+        <input type="checkbox" value="sightseeing" id="S_activity" name="activity3">
+        <label for="S_activity">Sightseeing</label>
+        <input type="checkbox" value="Shopping" id="Shop_activity" name="activity4">
+        <label for="Shop_activity">Shopping</label>
+        <input type="checkbox" value="trekking" id="T_activity" name="activity5">
+        <label for="T_activity">Trekking</label>
+        <br><br>
+
+        <p>Accommodation:</p>
+        <input id="3star" type="radio" name="accommodation" value="3star">
+        <label for="3star">3 Star</label>
+        <input id="4star" type="radio" name="accommodation" value="4star">
+        <label for="4star">4 Star</label>
+        <input id="5star" type="radio" name="accommodation" value="5star">
+        <label for="5star">5 star</label>
+        <input id="luxury" type="radio" name="accommodation" value="luxury resort">
+        <label for="luxury">Luxury Resort</label>
+        <br><br>
+
+        <h2>Special Requirements</h2>
+        <label for="about">Tell us about any special requirements or preferences for your vacation.</label><br>
+        <textarea id="about" name="about"></textarea>
+        <br><br>
+
+        <button type="submit">Book Vacation</button>
+        <br><br>
+        <button type="reset">Reset</button>
+    </form>
+
+    <footer>
+        <p>© 2026 Gatewaytrip. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
